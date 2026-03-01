@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Udayvardhan Singh Rathore - Portfolio</title>
+    <title>Udayvardhan Singh Rathore | 3D Portfolio</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- 3D Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- SECTION: Navigation -->
     <nav>
-        <div class="logo">Udayvardhan.</div>
+        <div class="logo">Udayvardhan<span>.</span></div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#certificates">Certificates</a></li>
@@ -21,138 +29,156 @@
 
     <!-- SECTION: Hero / Introduction -->
     <header id="about">
-        <div class="container">
-            <!-- PHOTO SECTION START -->
-            <div class="profile-container">
-                <!-- IMPORTANT: Put your photo in the same folder and name it 'profile.jpg' -->
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1500">
+            
+            <!-- EDIT HERE: Profile Photo -->
+            <div class="profile-wrapper">
                 <img src="profile.jpg" alt="Udayvardhan Singh Rathore" class="profile-pic">
             </div>
-            <!-- PHOTO SECTION END -->
-             
-            <h1>Hi, I'm <span class="highlight">Udayvardhan Singh Rathore</span></h1>
-            <p class="subtitle">B.E. in Electrical and Computer Science | VIT Chennai</p>
             
+            <!-- EDIT HERE: Name and Subtitle -->
+            <h1>Hi, I'm <span class="accent">Udayvardhan Singh Rathore</span></h1>
+            <p class="hero-subtitle">B.Tech in Electrical and Computer Science | VIT Chennai</p>
+            
+            <!-- EDIT HERE: Contact Details -->
             <div class="contact-info">
                 <p>📍 India | 📞 +91-8005710031</p>
                 <p>📧 <a href="mailto:udayvardhan.998@gmail.com">udayvardhan.998@gmail.com</a></p>
             </div>
 
-            <!-- IMPORTANT: REPLACE '#' WITH YOUR REAL LINKS BELOW -->
+            <!-- EDIT HERE: Social Links -->
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/udayvardhan-singh-rathore-b03ba428a/" target="_blank" class="btn">LinkedIn</a>
-                <a href="https://github.com/imuday984" target="_blank" class="btn">GitHub</a>
-                <a href="https://leetcode.com/u/imuday984/" target="_blank" class="btn">LeetCode</a>
+                <a href="https://www.linkedin.com/in/udayvardhan-singh-rathore-b03ba428a/" target="_blank" class="glass-btn">LinkedIn</a>
+                <a href="https://github.com/imuday984" target="_blank" class="glass-btn">GitHub</a>
+                <a href="https://leetcode.com/u/imuday984/" target="_blank" class="glass-btn">LeetCode</a>
             </div>
         </div>
     </header>
 
     <!-- SECTION: Education -->
-    <section id="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
+    <section class="container" id="education">
+        <h2 class="section-title" data-aos="fade-up">Education</h2>
+        <div class="education-grid">
             
-            <div class="education-card">
-                <h3>Vellore Institute of Technology Chennai</h3>
-                <p><strong>B.Tech Electrical and Computer Science Engineering</strong> | CGPA: 8.53</p>
+            <!-- EDIT HERE: College Details -->
+            <div class="glass-card" data-aos="fade-right">
+                <h3 class="accent">Vellore Institute of Technology Chennai</h3>
+                <p><strong>B.Tech Electrical and Computer Science Engineering</strong></p>
+                <p>CGPA: 8.53</p>
                 <span class="date">2023 – 2027</span>
             </div>
 
-            <div class="education-card">
-                <h3>Gyanodaya Public School</h3>
-                <p><strong>12th Grade</strong> | 88%</p>
+            <!-- EDIT HERE: School Details -->
+            <div class="glass-card" data-aos="fade-left" data-aos-delay="200">
+                <h3 class="accent">Gyanodaya Public School</h3>
+                <p><strong>12th Grade</strong></p>
+                <p>Score: 88%</p>
                 <span class="date">2021 – 2023</span>
             </div>
+
         </div>
     </section>
 
     <!-- SECTION: Projects -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="project-grid">
+    <section class="container" id="projects">
+        <h2 class="section-title" data-aos="fade-up">Projects</h2>
+        <div class="project-grid">
 
-                <!-- PROJECT 1: Log Stash -->
-                <div class="project-card">
+            <!-- EDIT HERE: Project 1 (Log Stash) -->
+            <div class="project-card" data-aos="flip-up" data-tilt data-tilt-max="10">
+                <div class="card-content">
+                    <span class="tech-tag">Node.js / Express / Docker / Elasticsearch</span>
                     <h3>Log Stash</h3>
-                    <p class="tech-stack">Node.js, Express.js, Elasticsearch, Socket.io, Docker</p>
                     <ul>
                         <li>Engineered a scalable, real-time log ingestion and monitoring platform designed for structured logs.</li>
-                        <li>Established an end-to-end data pipeline for ingesting, indexing, and searching logs with live updates.</li>
-                        <li>Containerized the system using Docker for simplified deployment.</li>
+                        <li>Established an end-to-end data pipeline with live updates.</li>
+                        <li>Containerized using Docker for simplified deployment.</li>
                     </ul>
-                    <div class="links">
-                        <!-- Replace # with your GitHub link for this project -->
-                        <a href="https://github.com/imuday984/LogStash">View Code</a>
-                    </div>
+                    <a href="https://github.com/imuday984/LogStash" target="_blank" class="link-btn">View Code →</a>
                 </div>
+            </div>
 
-                <!-- PROJECT 2: SpaceSage -->
-                <div class="project-card">
+            <!-- EDIT HERE: Project 2 (SpaceSage) -->
+            <div class="project-card" data-aos="flip-up" data-aos-delay="200" data-tilt data-tilt-max="10">
+                <div class="card-content">
+                    <span class="tech-tag">React / TypeScript / Python / TensorFlow</span>
                     <h3>SpaceSage</h3>
-                    <p class="tech-stack">React, TypeScript, Python, TensorFlow, Flask</p>
                     <ul>
                         <li>Developed an astronomy toolkit using ML to analyze astronomical data.</li>
-                        <li>Implemented galaxy classification, redshift analysis, and exoplanet habitability assessment.</li>
-                        <li>Built with React (Frontend) and Python (Backend ML models).</li>
+                        <li>Implemented galaxy classification, redshift analysis, and exoplanet assessment.</li>
+                        <li>Frontend in React; Backend ML models in Python.</li>
                     </ul>
-                    <div class="links">
-                        <a href="https://github.com/Riddhish1/SpaceSage">View Code</a>
-                    </div>
+                    <a href="https://github.com/Riddhish1/SpaceSage" target="_blank" class="link-btn">View Code →</a>
                 </div>
+            </div>
 
-                <!-- PROJECT 3: Chameleon-Link -->
-                <div class="project-card">
+            <!-- EDIT HERE: Project 3 (Chameleon-Link) -->
+            <div class="project-card" data-aos="flip-up" data-aos-delay="400" data-tilt data-tilt-max="10">
+                <div class="card-content">
+                    <span class="tech-tag">Node.js / Express.js / HTML / CSS</span>
                     <h3>Chameleon-Link</h3>
-                    <p class="tech-stack">Node.js, Express.js, HTML, CSS</p>
                     <ul>
                         <li>Developed a smart URL shortener that redirects users based on time-based rules.</li>
                         <li>Enabled a single link to point to different destinations depending on the time of day.</li>
                         <li>Lightweight and efficient backend service.</li>
                     </ul>
-                    <div class="links">
-                        <a href="https://github.com/imuday984/chameleon-link">View Code</a>
-                    </div>
+                    <a href="https://github.com/imuday984/chameleon-link" target="_blank" class="link-btn">View Code →</a>
                 </div>
-
             </div>
+
         </div>
     </section>
 
     <!-- SECTION: Technical Skills -->
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <p>Java, JavaScript, HTML/CSS, Python</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks</h3>
-                    <p>React, Node.js, NextJS, Express, WebSockets, WebRTC</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Databases & Tools</h3>
-                    <p>MySQL, MongoDB, PostgreSQL, Redis, Git, Docker, AWS</p>
-                </div>
-                <div class="skill-category">
-                    <h3>ML Libraries</h3>
-                    <p>TensorFlow, Pandas, NumPy, Scikit-learn</p>
-                </div>
+    <section class="container" id="skills">
+        <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+        <div class="skills-grid">
+            
+            <!-- EDIT HERE: Skill Categories -->
+            <div class="glass-card skill-box" data-aos="zoom-in">
+                <h3 class="accent">Languages</h3>
+                <p>Java, JavaScript, HTML/CSS, Python</p>
             </div>
+            
+            <div class="glass-card skill-box" data-aos="zoom-in" data-aos-delay="100">
+                <h3 class="accent">Frameworks</h3>
+                <p>React, Node.js, NextJS, Express, WebSockets, WebRTC</p>
+            </div>
+            
+            <div class="glass-card skill-box" data-aos="zoom-in" data-aos-delay="200">
+                <h3 class="accent">Databases & Tools</h3>
+                <p>MySQL, MongoDB, PostgreSQL, Redis, Git, Docker, AWS</p>
+            </div>
+            
+            <div class="glass-card skill-box" data-aos="zoom-in" data-aos-delay="300">
+                <h3 class="accent">ML Libraries</h3>
+                <p>TensorFlow, Pandas, NumPy, Scikit-learn</p>
+            </div>
+
         </div>
     </section>
 
     <!-- SECTION: Certificates -->
-    <section id="certificates">
-        <div class="container">
-            <h2 class="section-title">Certificates</h2>
-            <ul class="cert-list">
-                <!-- IMPORTANT: Paste the link to your certificate inside href="" -->
-                <li><a href="https://www.coursera.org/account/accomplishments/verify/AFKLWW4PRZ1H" target="_blank">Supervised Machine Learning: Regression and Classification</a></li>
-                <li><a href="https://www.linkedin.com/learning/certificates/c468c4b74d3af87ba57e1e7b0664b6591d83c125d6bebfb9a60cdcc49ac7a600" target="_blank">Java 11 by Kathryn Hodge</a></li>
-                <li><a href="https://www.linkedin.com/in/udayvardhan-singh-rathore-b03ba428a/overlay/1756313787387/single-media-viewer/?profileId=ACoAAEZMrzMBqoaZnmP-9IxIdAIOBS2DIu2gp24" target="_blank">Basic Networking for Cisco Certified Network Professional (300-101 ROUTE)</a></li>
-            </ul>
+    <section class="container" id="certificates">
+        <h2 class="section-title" data-aos="fade-up">Certificates</h2>
+        <div class="cert-list">
+            
+            <!-- EDIT HERE: Certificate Links -->
+            <a href="https://www.coursera.org/account/accomplishments/verify/AFKLWW4PRZ1H" target="_blank" class="glass-card cert-item" data-aos="fade-up" data-tilt data-tilt-max="5">
+                <h3>Supervised Machine Learning: Regression and Classification</h3>
+                <span class="accent">View Credential ↗</span>
+            </a>
+
+            <a href="https://www.linkedin.com/learning/certificates/c468c4b74d3af87ba57e1e7b0664b6591d83c125d6bebfb9a60cdcc49ac7a600" target="_blank" class="glass-card cert-item" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-max="5">
+                <h3>Java 11 by Kathryn Hodge</h3>
+                <span class="accent">View Credential ↗</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/udayvardhan-singh-rathore-b03ba428a/overlay/1756313787387/single-media-viewer/?profileId=ACoAAEZMrzMBqoaZnmP-9IxIdAIOBS2DIu2gp24" target="_blank" class="glass-card cert-item" data-aos="fade-up" data-aos-delay="200" data-tilt data-tilt-max="5">
+                <h3>Basic Networking for Cisco Certified Network Professional (300-101 ROUTE)</h3>
+                <span class="accent">View Credential ↗</span>
+            </a>
+
         </div>
     </section>
 
@@ -161,6 +187,9 @@
         <p>&copy; <span id="year"></span> Udayvardhan Singh Rathore.</p>
     </footer>
 
+    <!-- Scripts for 3D and Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
